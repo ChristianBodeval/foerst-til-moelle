@@ -1,0 +1,100 @@
+
+
+.parentDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    gap: 25px;
+    border-radius: 20px;
+    background: #F26D6D;
+
+    /**/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: 0;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);/**/
+}
+
+.usernameInputDiv {
+    background-color: white;
+    display: flex;
+    padding: 5px 10px;
+    align-items: center;
+    gap: 10px;
+}
+
+.usernameInputLogo {
+    display: flex;
+    flex-shrink: 0;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputField {
+    width: 412px;
+    line-height: 0;
+    font-family: "Arial";
+    font-size: 32px;
+    border-radius: 0;
+    border-color: white;
+    color: black;
+}
+
+.title {
+    display: flex;
+    width: 490px; /* width 490 passer med inputField width 412... dumt dumt */
+    align-items: center;
+}
+
+h1 {
+    line-height: 0;
+    font-family: "Arial";
+    font-size: 50px;
+    color: white;
+}
+
+i {
+    font-size: 40px;
+}
+
+.buttonDiv {
+
+}
+
+.heightSpaceBeforeCategories {
+    width: 10px;
+    height: 0px;
+}
+
+.button {
+    display: flex;
+
+    width: 442px;
+    padding: 20px;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #8d3838;
+
+    color: #FFF;
+    font-size: 32px;
+    line-height: 0;
+}
+
+.buttonAlternative {
+    display: flex;
+
+    width: 442px;
+    padding: 20px;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #4b4157;
+
+    color: #ffffff;
+    font-size: 32px;
+    line-height: 0;
+}

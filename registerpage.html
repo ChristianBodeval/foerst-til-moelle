@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="loginregisterpage.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- JS scripts -->
+    <script src="loginregisterpage.js"></script>
+</head>
+<body>
+    <div class="parentDiv">
+        <div class="title">
+            <h1>Opret konto</h1>
+        </div>
+        <div class="heightSpaceBeforeCategories"></div>
+        <div class="usernameInputDiv">
+            <div class="usernameInputLogo">
+                <i class="fa-solid fa-user" style="color: #4e5c74;"></i>
+            </div>
+            <input class="inputField" id="registerUsername" name="registerUsername" type="text" placeholder="Vælg et brugernavn"/>
+        </div>
+        <div class="usernameInputDiv">
+            <div class="usernameInputLogo">
+                <i class="fa-solid fa-envelope" style="color: #4e5c74;"></i>
+            </div>
+            <input class="inputField" id="registerEmail" name="registerEmail" type="text" placeholder="Vælg din e-mail"/>
+        </div>
+        <div class="usernameInputDiv">
+            <div class="usernameInputLogo">
+                <i class="fa-solid fa-lock" style="color: #4e5c74;"></i>
+            </div>
+            <input class="inputField" id="registerPassword" name="registerPassword" type="password" placeholder="Vælg et kodeord"/>
+        </div>
+        <div class="usernameInputDiv">
+            <div class="usernameInputLogo">
+                <i class="fa-solid fa-lock" style="color: #4e5c74;"></i>
+            </div>
+            <input class="inputField" id="registerPasswordRepeat" name="registerPasswordRepeat" type="password" placeholder="Gentag dit valgte kodeord"/>
+        </div>
+        <div class="heightSpaceBeforeCategories"></div>
+        <button onclick="CheckRegistrationAndRedirect()" class="button">Opret nu</button>
+        <a href="loginpage.html">
+            <button class="buttonAlternative">Jeg har allerede en konto</button>
+        </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" type="text/css" href="loginregisterpage.css">
+    <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- JS scripts -->
+    <script src="loginregisterpage.js"></script>
+</head>
+<body>
+    <div class="parentDiv">
+        <div class="title">
+            <h1>Login</h1>
+        </div>
+        <div class="heightSpaceBeforeCategories"></div>
+        <div class="usernameInputDiv">
+            <div class="usernameInputLogo">
+                <i class="fa-solid fa-user" style="color: #4e5c74;"></i>
+            </div>
+            <input class="inputField" id="loginUsername" name="loginUsername" type="text" placeholder="Skriv dit brugernavn"/>
+        </div>
+        <div class="usernameInputDiv">
+            <div class="usernameInputLogo">
+                <i class="fa-solid fa-lock" style="color: #4e5c74;"></i>
+            </div>
+            <input class="inputField" id="loginPassword" name="loginPassword" type="password" placeholder="Skriv dit kodeord"/>
+        </div>
+        <div class="heightSpaceBeforeCategories"></div>
+        <button onclick="CheckLoginAndRedirect()" class="button">Login nu</button>
+        <a href="registerpage.html">
+            <button class="buttonAlternative">Opret konto</button>
+        </a>
+    </div>
+</body>
+</html>
