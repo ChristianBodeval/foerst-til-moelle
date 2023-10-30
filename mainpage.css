@@ -181,7 +181,6 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 1px;
 }
 
@@ -267,20 +266,7 @@ body {
     overflow-y: auto;
 }
 
-.annonce {
-    box-shadow: 0 0 0 3px #000; /* Use "inset" keyword to create an inner shadow */
-    border-radius: 30px;
-    background-color: #b0b0b0; /* Set a background color to see the inner shadow */
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    height: 300px;
-    width: 230px;
-    gap: 3px;
-    border-radius: 30px;
-    background: #DBDBDB;
-    overflow: hidden;
-}
+
 
 
 .annonceImage {
@@ -300,21 +286,25 @@ body {
 .annonce h1 {
     line-height: 0;
     font-size: 30px;
+    display: block;
+    height: 10px;
 }
 
 .rightRegionStretch {
-    margin: 30px 30px 0 30px;
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    padding: 0 30px;
+    /*Move 30px in from the left*/
     align-items: center;
     gap: 20px;
+    flex-direction: column;
+    overflow-y: scroll;
 }
 
 .titleTopBar{
     box-shadow: 0 0 0 3px #000; /* Use "inset" keyword to create an inner shadow */
-
+    margin-top: 30px;
     background-color: #5a2858; /* Set a background color to see the inner shadow */
     color: #FFF;
     text-align: center;
@@ -435,12 +425,16 @@ body {
 }
 
 th {
+    top: 0;
+    position: sticky;
     text-align: left;
     background-color: #5F85BE;
     color: white;
+    z-index: 2;
 }
 
 tr {
+    border-radius: 20px;
     text-indent: 20px;
     line-height: 80px;
     box-shadow: inset 0 0 0 3px #000;
@@ -453,6 +447,8 @@ tr {
     height: 50px;
     width: 50px;
     position: relative;
+    /* Place behind with z-index */
+    z-index: 0;
 }
 
 .profile {
@@ -463,12 +459,48 @@ tr {
 }
 
 .profile p {
-    line-height: 0;
+    position: relative;
+    bottom: 0;
     font-size: 30px;
+    z-index: 4;
+}
+
+.roundedCorners {
+    border-radius: 30px;
 }
 
 .tableContainer {
     width: 100%;
     height: 100%;
-    overflow-y: scroll;
+}
+
+.annonce {
+    box-shadow: 0 0 0 3px #000; /* Use "inset" keyword to create an inner shadow */
+    border-radius: 30px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 230px;
+    gap: 10px;
+    border-radius: 30px;
+    background: #DBDBDB;
+    overflow: hidden;
+
+}
+
+.annonceImage2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.annonceImageContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
