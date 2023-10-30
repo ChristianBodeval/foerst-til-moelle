@@ -162,7 +162,6 @@ body {
     height: 46px;
     flex-shrink: 0;
     border-radius: 80px;
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
 
 .leftRegionRankingUserlistButton {
@@ -284,7 +283,7 @@ body {
 }
 
 .annonce h1 {
-    line-height: 0;
+    line-height: 1;
     font-size: 30px;
     display: block;
     height: 10px;
